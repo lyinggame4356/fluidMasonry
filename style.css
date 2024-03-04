@@ -1,0 +1,89 @@
+html,
+body {
+    height: 100vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 120s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    -ms-align-items: inherit;
+    align-items: center;
+    text-align: center;
+}
+
+.random-beer {
+    margin-top: 100px;
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    font-family: helvetica;
+}
+
+.description {
+    max-width: 600px;
+    color: whitesmoke;
+    font-family: helvetica;
+    font-style: italic;
+    font-size: 17px;
+}
+
+.abv {
+    max-width: 200px;
+    color: whitesmoke;
+    font-family: helvetica;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.food {
+    max-width: 50%;
+    color: lightcyan;
+    font-family: helvetica;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.beer-button {
+    display: inline-flex;
+}
+
+.beer-button a{
+    display:inline-block;
+      
+      font:normal normal 300 1.3em 'Open Sans';
+      text-decoration:none;	
+      
+      color:rgb(255, 255, 255);
+      brackground-color:transparent;
+      border:2px solid rgb(255, 255, 255);
+      border-radius:100px;
+      
+      padding: .3em 1.2em;
+      margin:5px;
+              
+      background-size: 200% 100%;	
+      background-image: linear-gradient(to right, transparent 50%, rgb(255, 255, 255) 50%);
+      transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
+  }
+  
+  .beer-button a:hover{
+      color:rgba(255, 255, 255, 1);
+      background-color:rgb(255, 255, 255);
+      background-position: -100% 100%;
+  }
